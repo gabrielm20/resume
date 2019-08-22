@@ -9,6 +9,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <div class="topnav">
+      <%= link_to "Home", root_path %>
+      <%= link_to "Job history" %>
+      <a href="#contact">Contact</a>
+      <%= link_to "About", about_path %>
+    </div>
   	<div class="parallax_wrapper">
   		<div class="content">
   			<p>Hi. My name is Gabriel Maestas. I am an aspiring web developer that would be a perfect match for your team.
