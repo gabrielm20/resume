@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+	overflow:hidden;
+}
+body {
+	margin:0;
+	font-size:25px;
+	color:#ffffff;
+	height:100vh;
+	perspective:1px;
+	transform-style:preserve-3d;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.parallax_wrapper {
+	width:100vw;
+	height:100vh;
+	padding-top:20vh;
+	box-sizing:border-box;
+	transform-style:preserve-3d;
+
+}
+.parallax_wrapper::before {
+	content:"";
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+	background-image:url("paint3.jpg");
+	position:absolute;
+	z-index:-1;
+	transform:translateZ(-1px) scale(2);
+}
+.regular_wrapper {
+	width:100vw;
+	height:100vh;
+	padding-top:20vh;
+	background-image:url("paint4.jpg");
+	z-index:2;
+	position:relative;
+}
+.content {
+	margin: 0 auto;
+	padding: 50px;
+	width: 50%;
+	background:#aaaa;
+	font-family: 'Hepta Slab', serif;
+	font-size: 25px;
+}
