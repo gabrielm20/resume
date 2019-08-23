@@ -50,8 +50,20 @@ body {
 	background:#aaaa;
 	text-align:center;
 	font-family: 'Hepta Slab', serif;
+	font-size:30px;
 	font-size:1.75vw;
 	
+}
+.container {
+	display: grid;
+	justify-content:stretch;
+	grid-template-columns:50% 50%;
+	grid-template-rows:50% 50%;
+}
+.item_a {
+	grid-column:1;
+	grid-row:1;
+	background-image:url("01.jpg");
 }
 /* Add a black background color to the top navigation */
 .topnav {
