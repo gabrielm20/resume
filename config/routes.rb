@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   resources :pages, only: [:index, :show]
   get 'about', to: 'pages#about'
+  get 'work', to: 'pages#work'
 end
