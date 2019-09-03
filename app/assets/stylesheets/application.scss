@@ -21,15 +21,17 @@
 html {
 	overflow:hidden;
 }
+.modal + .modal-backdrop ~ .modal-backdrop {
+	display:none;
+	color: #212529;
+}
 .body_p {
 	margin:auto auto;
-	color:#ffffff;
 	height:100vh;
-	perspective:1px;
 	transform-style:preserve-3d;
 	overflow-x:hidden;
 	overflow-y:auto;
-	font-weight: 200;
+	perspective:1px;
 }
 .parallax_wrapper {
 	width:100vw;
@@ -39,7 +41,6 @@ html {
 	transform-style:preserve-3d;
 	min-width:650px;
 	min-height:650px;
-
 }
 .parallax_wrapper::before {
 	content:"";
@@ -54,6 +55,7 @@ html {
 	transform:translateZ(-1px) scale(2);
 	min-width:650px;
 	min-height:650px;
+	perspective:1px;
 }
 .regular_wrapper {
 	width:100vw;
@@ -95,6 +97,8 @@ html {
 	height:50%;
 	background:rgba(168, 168, 168, 0.8);
 	font-family: 'Hepta Slab', serif;
+	color:#ffffff;
+	font-weight:200;
 	min-width:500px;
 	min-height:500px;
 	font-size:calc(21px + .4vw);
@@ -122,9 +126,11 @@ html {
 }
 .work_content {
 	padding-top:50px;
-	background:rgba(168, 168, 168, 0.8);
+	background:rgba(168, 168, 168, 0.9);
 	font-family: 'Hepta Slab', serif;
 	background-size:contain;
+	font-weight:200;
+	color:#ffffff;
 }
 /* TOPNAV */
 .topnav {
@@ -135,6 +141,7 @@ html {
   z-index:10;
   width:100%;
   height:50px;
+  perspective:none;
 
 }
 .topnav a {
