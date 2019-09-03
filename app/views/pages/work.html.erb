@@ -9,12 +9,46 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <nav class="topnav">
+  	<nav class="topnav">
       <%= link_to "Home", root_path %>
       <%= link_to "Job history", work_path %>
-      <a href="#contact">Contact</a>
       <%= link_to "About", about_path %>
+      <a href="contact" data-toggle="modal" data-target="#exampleModal">Contact</a>
     </nav>
+    <div class="regular_wrapper_work">    	
+	    	<div class="work_content col-md">
+	    		Citibank
+	    	</div>
+	    	<div class="work_content col-md">
+	    		Dish Network
+	    	</div>
+	    	<div class="work_content col-md">
+	    		Afni
+	    	</div>
+	    	<div class="work_content col-md">
+	    		What-A-Burger
+	    	</div>    
+    </div>
     <%= yield %>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Phone - (520)820-3023
+            <br//>
+            E-mail - gabrielmaestas20@gmail.com
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 <html>
