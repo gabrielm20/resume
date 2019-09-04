@@ -48,7 +48,7 @@ html {
 	height:100vh;
 	top:0;
 	left:0;
-	background-image:url("paint3.jpg");
+	background-image:image-url("paint3.jpg");
 	background-size:cover;
 	position:absolute;
 	z-index:-1;
@@ -61,7 +61,7 @@ html {
 	width:100vw;
 	height:100vh;
 	padding-top:20vh;
-	background-image:url("paint4.jpg");
+	background-image:image-url("paint4.jpg");
 	background-size:cover;
 	z-index:2;
 	position:relative;
@@ -73,7 +73,7 @@ html {
 	width:100vw;
 	height:100vh;
 	padding-top:20vh;
-	background-image:url("nature.jpg");
+	background-image:image-url("nature.jpg");
 	background-size:cover;
 	z-index:2;
 	position:relative;
@@ -82,7 +82,7 @@ html {
 	min-height:650px;
 }
 .regular_wrapper_work {
-	background-image:url("coding.jpg");
+	background-image:image-url("coding.jpg");
 	background-size:cover;
 	z-index:2;
 	position:absolute;
@@ -106,7 +106,7 @@ html {
 	padding-top:15px;
 }
 .pic {
-	background-image:url("family.jpg");
+	background-image:image-url("family.jpg");
 	width: auto;
   	height: 75%;
    	background-size: cover;
